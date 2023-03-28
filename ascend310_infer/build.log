@@ -1,0 +1,8 @@
+WARNING: Ignoring invalid distribution -indspore-ascend (/home/miniconda/envs/csy/lib/python3.7/site-packages)
+WARNING: Ignoring invalid distribution -cipy (/home/miniconda/envs/csy/lib/python3.7/site-packages)
+WARNING: Ignoring invalid distribution -e (/home/miniconda/envs/csy/lib/python3.7/site-packages)
+WARNING: Ignoring invalid distribution - (/home/miniconda/envs/csy/lib/python3.7/site-packages)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/stu/hzl/Nanodet_Plus_Rename/ascend310_infer/out
+[100%] Built target main
