@@ -435,7 +435,7 @@ mAP: 0.26522640420473925
 | MindSpore 版本             | 1.8.1                                                |
 | 数据集                      | 123287 张图片                                           |
 | Batch_size                 | 32                                                   |
-| 训练参数                    | src/config.py                                        |
+| 训练参数                    | src/default_config.py                                        |
 | 优化器                      | Momentum                                             |
 | 损失函数                    | Generalized Focal Loss + GIou Loss                   |
 | 最终损失                    | 5.1842780113220215                                   |
