@@ -120,33 +120,33 @@ MSCOCO2017
 
 ```default_config.yaml
 在脚本中使用到的主要参数是：
-"img_shape": [320, 320],                                                # 图像尺寸
-"num_retinanet_boxes": 2125,                                            # 设置的先验框总数
-"nms_thershold": 0.6,                                                   # 非极大抑制阈值
-"min_score": 0.05,                                                      # 最低得分
-"max_boxes": 100,                                                       # 检测框最大数量
-"lr_init": 1e-6,                                                        # 初始学习率
-"lr_end_rate": 5e-3,                                                    # 最终学习率与最大学习率的比值
-"warmup_epochs1": 2,                                                    # 第一阶段warmup的周期数
-"warmup_epochs2": 5,                                                    # 第二阶段warmup的周期数
-"warmup_epochs3": 23,                                                   # 第三阶段warmup的周期数
-"warmup_epochs4": 60,                                                   # 第四阶段warmup的周期数
-"warmup_epochs5": 160,                                                  # 第五阶段warmup的周期数
-"momentum": 0.9,                                                        # momentum
-"weight_decay": 1.0e-4,                                                 # 权重衰减率
-"num_default": [1, 1, 1, 1],                                            # 单个网格中先验框的个数
+"img_shape": [320, 320],                                                            # 图像尺寸
+"num_retinanet_boxes": 2125,                                                        # 设置的先验框总数
+"nms_thershold": 0.6,                                                               # 非极大抑制阈值
+"min_score": 0.05,                                                                  # 最低得分
+"max_boxes": 100,                                                                   # 检测框最大数量
+"lr_init": 1e-6,                                                                    # 初始学习率
+"lr_end_rate": 5e-3,                                                                # 最终学习率与最大学习率的比值
+"warmup_epochs1": 2,                                                                # 第一阶段warmup的周期数
+"warmup_epochs2": 5,                                                                # 第二阶段warmup的周期数
+"warmup_epochs3": 23,                                                               # 第三阶段warmup的周期数
+"warmup_epochs4": 60,                                                               # 第四阶段warmup的周期数
+"warmup_epochs5": 160,                                                              # 第五阶段warmup的周期数
+"momentum": 0.9,                                                                    # momentum
+"weight_decay": 1.0e-4,                                                             # 权重衰减率
+"num_default": [1, 1, 1, 1],                                                        # 单个网格中先验框的个数
 "extras_out_channels": [96, 96, 96, 96],
 "extras_out_channels_aux": [192, 192, 192, 192],
-"feature_size": [40, 20, 10, 5],                                        # 特征层尺寸
-"aspect_ratios": [[1.0], [1.0], [1.0], [1.0]],                          # 先验框大小变化比值
-"steps": [8, 16, 32, 64],                                               # 先验框设置步长
-"anchor_size":[8, 16, 32, 64],                                          # 先验框尺寸
-"mindrecord_dir": "/cache/MindRecord_COCO",                             # mindrecord文件路径
-"coco_root": "/cache/coco",                                             # coco数据集路径
-"train_data_type": "train2017",                                         # train图像的文件夹名
-"val_data_type": "val2017",                                             # val图像的文件夹名
-"instances_set": "annotations_trainval2017/annotations/instances_{}.json",                      
-"coco_classes": ('person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',                  
+"feature_size": [40, 20, 10, 5],                                                    # 特征层尺寸
+"aspect_ratios": [[1.0], [1.0], [1.0], [1.0]],                                      # 先验框大小变化比值
+"steps": [8, 16, 32, 64],                                                           # 先验框设置步长
+"anchor_size":[8, 16, 32, 64],                                                      # 先验框尺寸
+"mindrecord_dir": "/cache/MindRecord_COCO",                                         # mindrecord文件路径
+"coco_root": "/cache/coco",                                                         # coco数据集路径
+"train_data_type": "train2017",                                                     # train图像的文件夹名
+"val_data_type": "val2017",                                                         # val图像的文件夹名
+"instances_set": "annotations_trainval2017/annotations/instances_{}.json",          # 标签文件路径            
+"coco_classes": ('person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',       # coco数据集的种类           
                  'train', 'truck', 'boat', 'traffic light', 'fire hydrant',
                  'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog',
                  'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra',
@@ -161,17 +161,17 @@ MSCOCO2017
                  'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink',
                  'refrigerator', 'book', 'clock', 'vase', 'scissors',
                  'teddy bear', 'hair drier', 'toothbrush'),
-"num_classes": 80,                                                     # 数据集类别数
-"voc_root": "",                                                        # voc数据集路径
+"num_classes": 80,                                                                 # 数据集类别数
+"voc_root": "",                                                                    # voc数据集路径
 "voc_dir": "",
-"image_dir": "",                                                       # 图像路径
-"anno_path": "",                                                       # 标签文件路径
-"save_checkpoint": True,                                               # 保存checkpoint
-"save_checkpoint_epochs": 1,                                           # 保存checkpoint epoch数
-"keep_checkpoint_max":1,                                               # 保存checkpoint的最大数量
-"save_checkpoint_path": "./ckpt",                                      # 保存checkpoint的路径
-"finish_epoch":0,                                                      # 已经运行完成的 epoch 数
-"checkpoint_path":"./ckpt/nanodetplus-497_916.ckpt"                    # 用于推理的checkpoint路径
+"image_dir": "",                                                                   # 图像路径
+"anno_path": "",                                                                   # 标签文件路径
+"save_checkpoint": True,                                                           # 保存checkpoint
+"save_checkpoint_epochs": 1,                                                       # 保存checkpoint epoch数
+"keep_checkpoint_max":1,                                                           # 保存checkpoint的最大数量
+"save_checkpoint_path": "./ckpt",                                                  # 保存checkpoint的路径
+"finish_epoch":0,                                                                  # 已经运行完成的 epoch 数
+"checkpoint_path":"./ckpt/nanodetplus-497_916.ckpt"                                # 用于推理的checkpoint路径
 ```
 
 ### [训练过程](#content)
