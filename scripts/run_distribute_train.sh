@@ -17,7 +17,7 @@
 echo "=============================================================================================================="
 echo "Please run the script as: "
 echo "sh scripts/run_distribute_train.sh DEVICE_NUM RANK_TABLE_FILE MINDRECORD_DIR CONFIG_PATH PRE_TRAINED PRE_TRAINED_EPOCH_SIZE"
-echo "for example: sh scripts/run_distribute_train.sh 8 /data/hccl.json /cache/mindrecord_dir/ /config/default_config.yaml /opt/retinanet-500_458.ckpt(optional) 200(optional)"
+echo "for example: sh scripts/run_distribute_train.sh 8 /data/hccl.json /cache/mindrecord_dir/ /config/default_config.yaml /opt/nanodetplus-500_458.ckpt(optional) 200(optional)"
 echo "It is better to use absolute path."
 echo "================================================================================================================="
 
