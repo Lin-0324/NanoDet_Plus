@@ -836,7 +836,8 @@ class ShuffleNetV2(nn.Cell):
         return C2, C3, C4
 
     def _initialize_weights(self):
-        param_dict = load_checkpoint("/home/work/user-job-dir/V0001/shufflenetV2_x1.ckpt")
+        # param_dict = load_checkpoint("./shufflenetV2_x1.ckpt")
+        param_dict = load_checkpoint(config.backbone_ckpt)
         load_param_into_net(self, param_dict)
         print("shufflenetV2 init done!")
 
