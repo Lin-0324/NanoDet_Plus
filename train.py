@@ -243,7 +243,7 @@ def main():
 if __name__ == '__main__':
     local_data_url = config.data_url
     print(os.path.exists(local_data_url))
-    config.data_url = '/home/work/user-job-dir/data/'
+    # config.data_url = '/home/work/user-job-dir/data/'
     try:
         mox.file.copy_parallel(local_data_url, config.data_url)
         print("Successfully Download {} to {}".format(local_data_url, config.data_url))
